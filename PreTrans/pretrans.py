@@ -9,7 +9,7 @@ import pickle
 # target=[]
 class PreTrans:
     """预处理文本,方便bert类的自然语言使用"""
-    def __init__(self,tokenizer,max_length=512,slide_len=2,slide=True):
+    def __init__(self,tokenizer=None,max_length=512,slide_len=2,slide=True):
         self.LiWords=[]
         self.tokenizer=tokenizer
         self.max_length=max_length
